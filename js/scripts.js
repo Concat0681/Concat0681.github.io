@@ -61,3 +61,19 @@ $('.link-wrap>div').on('click', function () {
   const href = $(this).find('a').text()
   location.href = href
 })
+
+let observer = new IntersectionObserver(e => {
+  e.forEach(text => {
+    if (text.isIntersecting) {
+      text.target.style.opacity = 1
+      text.target.style.transform = 'translateX(0%)'
+    } else {
+      text.target.style.opacity = 0
+      text.target.style.transform = 'translateX(30%)'
+    }
+  })
+})
+const skillBox = $('.col-md-4')
+skillBox.each(i => {
+  observer.observe(skillBox[i])
+})
