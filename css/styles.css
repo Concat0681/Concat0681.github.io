@@ -102,7 +102,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   .container>.masthead-subheading{
     line-height: 2.0em;
     font-size: 1.2rem;
@@ -113,7 +113,7 @@ body {
   opacity: 0;
   transition: all 2s;
 }
-@media (min-width: 400px){
+@media (min-width: 320px){
   .page-section h2{
     font-size: 40px;
     margin-bottom: 10px;
@@ -139,35 +139,44 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .about-content>div>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 14rem;
+    margin: 0 auto;
+  }
+  .about-content>div>div>div{
+    margin-left: 30px;
+  }
 }
-@media (min-width: 400px){
+@media (min-width: 320px){
   .about-content>div{
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
-.about-content>div>div{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  max-width: 14rem;
-  margin: 0 auto;
+  .about-content>div>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .about-content>div>div>div{
+    margin-left: 15px;
+  }
 }
 .about-content>div>div>*:first-child{
   width: 40px;
-}
-.about-content>div>div>div{
-  margin-left: 30px;
 }
 .img-wrap{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-@media (min-width : 400px){
+@media (min-width : 320px){
   .img-wrap{
     background-color: #fff;
     padding: 10px;
@@ -177,7 +186,7 @@ body {
     justify-content: space-around;
   }
 }
-@media (min-width : 400px){
+@media (min-width : 320px){
   .img-wrap>img{
     width: 50px;
   }
@@ -193,7 +202,7 @@ body {
   background-size: cover; 
   margin-bottom: 50px;
 }
-@media (min-width: 1200px){
+@media (min-width: 320px){
   .portfolio-description{
     text-align: left;
     display: flex;
@@ -204,7 +213,7 @@ body {
     margin-right: 50px;
   }
 }
-@media (min-width: 400px){
+@media (min-width: 320px){
   .portfolio-description{
     text-align: left;
     display: flex;
@@ -255,7 +264,7 @@ body {
     left: -10%;
   }
 }
-@media (min-width : 400px){
+@media (min-width : 320px){
   .slick-content{
     width: 100%;
     margin-bottom: 20px;
@@ -301,8 +310,11 @@ body {
     border-radius: 10px;
     background-color: white;
   }
+  .link-header>h2{
+    margin-left: 15px;
+  }
 }
-@media (min-width: 400px){
+@media (min-width: 320px){
   .link-wrap{
     width: 100%;
     display: flex;
@@ -316,6 +328,11 @@ body {
     border-radius: 10px;
     background-color: white;
   }
+  .link-header>h2{
+    line-height: 30px;
+    font-size: 30px;
+    margin-left: 15px;
+  }
 }
 .link-wrap>div:hover{
   transform: translateY(3%);
@@ -326,11 +343,9 @@ body {
 }
 .link-header{
   display: flex;
+  align-items: center;
 }
-.link-header>h2{
-  margin-left: 15px;
-}
-@media (min-width: 400px){
+@media (min-width: 320px){
   .link-content{
     width: 100%;
     display: flex;
