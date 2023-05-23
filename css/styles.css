@@ -131,6 +131,10 @@ body {
     margin-bottom: 10px;
   }
   .row>.col-md-4{
+    margin-top: 50px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 30px;;
     width: 30%;
   }
   .row>.col-md-4>div{
