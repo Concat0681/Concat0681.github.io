@@ -125,32 +125,48 @@ body {
     margin-top: 10px;
   }
 }
-
-.about-content{
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
+@media (min-width: 1000px){
+  .page-section h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .row>.col-md-4{
+    width: 33%;
+  }
+  .row>.col-md-4>div{
+    margin-top: 10px;
+  }
 }
-@media (min-width: 1200px){
-  .about-content>div{
+@media (min-width: 1000px){
+  .container>.about-content{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container>.about-content>div{
     margin: 20px 0;
     width: 33.3333%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .about-content>div>div{
+  .container>.about-content>div>div{
     width: 100%;
     display: flex;
     align-items: center;
     max-width: 14rem;
     margin: 0 auto;
   }
-  .about-content>div>div>div{
+  .container>.about-content>div>div>div{
     margin-left: 30px;
   }
 }
 @media (min-width: 320px){
+  .about-content{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .about-content>div{
     margin: 10px 0;
     width: 100%;
@@ -185,14 +201,21 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-}
-@media (min-width : 320px){
   .img-wrap>img{
     width: 50px;
   }
 }
-@media (min-width : 1200px){
-  .img-wrap>img{
+@media (min-width : 1000px){
+  .img-wrap{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .col-md-4>.img-wrap>img{
     margin-bottom: 20px;
     width: 40%;
     height: 110px;
@@ -231,36 +254,36 @@ body {
 .portfolio-description>span{
   font-size: 20px;
 }
-@media (min-width : 1200px){
-  .slick-content{
+@media (min-width : 1100px){
+  .modal-body>.slick-content{
     width: 100%;
     margin-bottom: 50px;
   }
-  .slick-content>div{
-    display: flex;
+  .slick-item{
+    display: flex !important;
   }
-  .slick-content img{
-    width: 60%;
-    height: 600px;
+  .modal-body>.slick-content img{
+    width: 60% !important;
+    height: 600px !important;
   }
-  .description-box{
+  .modal-body .description-box{
     text-align: left;
     margin-left: 20px;
   }
-  .slick-arrow{
+  .modal-body .slick-arrow{
     border: none;
     background-color: white;
     z-index: 1;
     position: absolute;
     top: 50%;
   }
-  .slick-arrow>span{
+  .modal-body .slick-arrow>span{
     font-size: 50px;
   }
-  .slide-next{
+  .modal-body .slide-next{
     right: -10%;
   }
-  .slide-prev{
+  .modal-body .slide-prev{
     left: -10%;
   }
 }
@@ -296,21 +319,21 @@ body {
     left: 0%;
   }
 }
-@media (min-width: 1200px){
-  .link-wrap{
+@media (min-width: 1100px){
+  .container>.link-wrap{
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .link-wrap>div{
+  .container>.link-wrap>div{
     width: 40%;
     padding: 30px;
     border-radius: 10px;
     background-color: white;
   }
-  .link-header>h2{
+  .container>.link-header>h2{
     margin-left: 15px;
   }
 }
@@ -345,7 +368,7 @@ body {
   display: flex;
   align-items: center;
 }
-@media (min-width: 320px){
+@media (max-width: 800){
   .link-content{
     width: 100%;
     display: flex;
@@ -7828,13 +7851,13 @@ textarea.form-control-lg {
 }
 
 .my-1 {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .my-2 {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .my-3 {
@@ -11123,7 +11146,6 @@ p {
 
 @media (min-width: 1200px){
   .skills-sub-heading{
-    color: #31525b;
     font-size: 30px;
     padding-bottom: 40px;
     font-family: noto-sans-bold;
