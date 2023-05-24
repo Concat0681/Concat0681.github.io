@@ -132,6 +132,7 @@ body {
   }
   .row>.col-md-4{
     margin-top: 50px;
+    padding: 20px;
     height: fit-content;
     background-color: #fff;
     border-radius: 30px;;
@@ -221,7 +222,7 @@ body {
   }
   .col-md-4>.img-wrap>img{
     margin-bottom: 20px;
-    width: 40%;
+    width: 7rem;
     height: 110px;
   }
 }
@@ -372,14 +373,14 @@ body {
   display: flex;
   align-items: center;
 }
-@media (max-width: 800){
+@media (max-width: 1100){
   .link-content{
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .link-content a{
+   .link-content a{
     overflow: hidden;
   }
   .link-content *{
