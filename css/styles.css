@@ -130,13 +130,16 @@ body {
     font-size: 40px;
     margin-bottom: 10px;
   }
+  .container.row.text-center{
+    justify-content: space-evenly;
+  }
   .row>.col-md-4{
     margin-top: 50px;
     padding: 20px;
     height: fit-content;
     background-color: #fff;
     border-radius: 30px;;
-    width: 30%;
+    width: 25%;
   }
   .row>.col-md-4>div{
     margin-top: 10px;
@@ -214,7 +217,6 @@ body {
   .img-wrap{
     width: 100%;
     background-color: #fff;
-    padding: 30px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -222,8 +224,8 @@ body {
   }
   .col-md-4>.img-wrap>img{
     margin-bottom: 20px;
-    width: 7rem;
-    height: 110px;
+    width: 45%;
+    height: 100px;
   }
 }
 .project-details{
@@ -1406,7 +1408,7 @@ progress {
   }
   div.row.text-center{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .col-md-5 {
     flex: 0 0 auto;
