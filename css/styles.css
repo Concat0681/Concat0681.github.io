@@ -264,7 +264,9 @@ body {
 @media (min-width : 1100px){
   .modal-body>.slick-content{
     width: 100%;
-    margin-bottom: 50px;
+  }
+  .modal-body>button{
+    margin-top: 50px;
   }
   .slick-item{
     display: flex !important;

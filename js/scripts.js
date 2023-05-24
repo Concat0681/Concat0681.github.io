@@ -48,6 +48,8 @@ $('.modal').on('shown.bs.modal', function (e) {
 $('.slick-content').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
+  dots: true,
+  infinite: false,
   autoplay: false,
   arrows: true,
   nextArrow:
